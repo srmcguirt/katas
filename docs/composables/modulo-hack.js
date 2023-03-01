@@ -1,0 +1,1 @@
+export const moduloHack = (n, m) => ((n % m) + m) % m
