@@ -6,15 +6,20 @@
     "packages/*"
   ],
   "scripts": {
+    "prepare": "lefthook install",
     "test": "bunx moon run :test",
     "typecheck": "bunx moon run :typecheck",
     "lint": "bunx moon run :lint",
-    "format": "bunx moon run :format"
+    "format": "bunx moon run :format",
+    "commitlint": "commitlint --edit"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.7",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
     "@moonrepo/cli": "2.4.6",
     "@types/bun": "latest",
+    "lefthook": "^2.1.10",
     "typescript": "7.0.2"
   }
 }

@@ -14,6 +14,18 @@ Run a single kata's tests:
 bunx moon run fizzbuzz:test
 ```
 
+## Commit conventions
+
+Commit messages must follow [Conventional Commits](https://www.conventionalcommits.org/) (`feat:`, `fix:`, `chore:`, etc.), enforced by [commitlint](https://commitlint.js.org/) via a [lefthook](https://lefthook.dev/) `commit-msg` hook. `bun install` wires the hooks automatically via the `prepare` script.
+
+A lean `pre-commit` hook also runs `biome check` on staged JS/TS/JSON files only — no full-repo typecheck or test suite, so it won't slow down automated commits (e.g. hive sync).
+
+Bypass either hook with `--no-verify` when needed:
+
+```bash
+git commit --no-verify -m "wip: skip hooks"
+```
+
 ## Working a kata
 
 Every kata starts as a stub: `src/<kata>.ts` throws `Not implemented`, and `src/<kata>.test.ts` has one placeholder test. That failing test is the RED step.
