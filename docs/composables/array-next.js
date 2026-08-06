@@ -1,1 +1,0 @@
-export const arrayNext = (a, i) => a[(i + 1) % a.length]
