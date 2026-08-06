@@ -1,0 +1,22 @@
+id: kata
+title: Kata
+description: Scaffold a new kata package under packages/<name>
+
+variables:
+  name:
+    type: string
+    required: true
+    prompt: "Package name (kebab-case, e.g. two-sum)?"
+  title:
+    type: string
+    required: true
+    prompt: "Human-readable title (e.g. Two Sum)?"
+  description:
+    type: string
+    required: true
+    prompt: "One-line problem statement?"
+  source:
+    type: string
+    required: false
+    default: ""
+    prompt: "Source URL (optional)?"
