@@ -1,0 +1,15 @@
+{
+  "name": "katas",
+  "type": "module",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "bunx moon run :test",
+    "typecheck": "bunx moon run :typecheck"
+  },
+  "devDependencies": {
+    "@moonrepo/cli": "2.4.6",
+    "@types/bun": "latest",
+    "typescript": "7.0.2"
+  }
+}

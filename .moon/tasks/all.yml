@@ -1,0 +1,19 @@
+$schema: 'https://moonrepo.dev/schemas/tasks.yml'
+
+tasks:
+  test:
+    command: 'bun test'
+    inputs:
+      - 'src/**/*'
+      - '*.test.ts'
+      - '**/*.test.ts'
+
+  typecheck:
+    command:
+      - 'tsc'
+      - '--noEmit'
+      - '--pretty'
+    inputs:
+      - 'src/**/*'
+      - 'tsconfig.json'
+      - '/tsconfig.json'
