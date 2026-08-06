@@ -17,3 +17,26 @@ tasks:
       - 'src/**/*'
       - 'tsconfig.json'
       - '/tsconfig.json'
+
+  lint:
+    command:
+      - 'biome'
+      - 'lint'
+      - '.'
+    inputs:
+      - 'src/**/*'
+      - '*.test.ts'
+      - '**/*.test.ts'
+      - '/biome.json'
+
+  format:
+    command:
+      - 'biome'
+      - 'format'
+      - '--write'
+      - '.'
+    inputs:
+      - 'src/**/*'
+      - '*.test.ts'
+      - '**/*.test.ts'
+      - '/biome.json'
