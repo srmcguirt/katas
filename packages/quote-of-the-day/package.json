@@ -1,0 +1,6 @@
+{
+  "name": "@katas/quote-of-the-day",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module"
+}

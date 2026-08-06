@@ -1,0 +1,6 @@
+{
+  "name": "@katas/numbers-in-words",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module"
+}

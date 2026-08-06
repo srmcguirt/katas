@@ -1,0 +1,6 @@
+{
+  "name": "@katas/pizza-maker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module"
+}
