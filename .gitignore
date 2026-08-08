@@ -38,5 +38,9 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .moon/cache
 .moon/docker
 
-# hive data (moved to ~/hive-data)
+# agentic config (moved to ~/hive-data + untracked opencode.json bootstrap)
 .hive/
+CLAUDE.md
+AGENTS.md
+MEMORY.md
+opencode.json
